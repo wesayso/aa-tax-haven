@@ -156,7 +156,7 @@ button {
 }
 
 .wrapper .container {
-    padding: 2% 
+    padding: 2% 2% 4% 2%;  
 }
 
 .container {
@@ -164,6 +164,10 @@ button {
     margin: 0 auto;
     position: relative;
     
+}
+
+.container > h2 {
+    text-align: center;
 }
 
 .container > h2:before {
@@ -174,6 +178,24 @@ button {
 .container > h2:after {
     content: "\0020\2014";
     color: #ccc;
+}
+.logo {
+    background-color: #fff;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 5;
+    background: url("../img/logo.png");
+    border: 1em solid #fff;
+    -webkit-background-size: cover;
+         -moz-background-size: cover;
+           -o-background-size: cover;
+              background-size: cover;
+
+    border-radius: 50%;
+    
 }
 
 .mainstage {
@@ -270,7 +292,7 @@ button {
 }
 
 .map h3 {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 .map .container {
@@ -282,6 +304,7 @@ button {
     background-color: red;
     position: relative;
     padding: 4em 0;
+ 
 }
 
 .hack h1 {
@@ -291,6 +314,11 @@ button {
 
 .hack p {
     color: #fff;
+}
+
+.aa-logo {
+    width: 30%;
+    max-width: 18em;
 }
 
 .tear {
@@ -309,11 +337,6 @@ button {
     background-image: url("../img/torn-bottom.png");
 }
 
-.testimonials {
-    max-height: 24em;
-    background-color: black;
-}
-
 .testimonials ul > * {
     float: left;
     display: block;
@@ -323,10 +346,6 @@ button {
          -moz-background-size: cover;
            -o-background-size: cover;
               background-size: cover;
-}
-
-.testimonials {
-
 }
 
 .testimonials .one {
@@ -350,7 +369,7 @@ button {
     height: 18em;
 }
 
-.testimonials h2 {
+.testimonials h3 {
     font-size: 1.5em;
     background-color: #fff;
     padding: 0.25em;
@@ -358,6 +377,18 @@ button {
     bottom: 1em;
 }
 
+.testimonials .container {
+    padding-bottom: 0;
+}
+
+.stats {
+    text-align: center;
+}
+
+
+footer {
+    height: 10em;
+}
 
 /* ==========================================================================
    Helper classes

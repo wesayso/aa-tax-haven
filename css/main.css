@@ -126,7 +126,7 @@ h2 {
 
 
 p {
-    font-size: 1.15em;
+    
     line-height: 1.75em;
     margin-top: 0;
     color: #444;
@@ -172,15 +172,6 @@ button {
     text-align: center;
 }
 
-.container > h2:before {
-    content: "\2014\0020";
-    color: #ccc;
-}
-
-.container > h2:after {
-    content: "\0020\2014";
-    color: #ccc;
-}
 .logo {
     background-color: #fff;
     width: 2em;
@@ -263,6 +254,10 @@ button {
 .intro p {
     max-width: 36em;
     margin: 0 auto;
+}
+
+.three-col li {
+    margin-bottom: 2em;
 }
 
 .three-col h2 {
@@ -510,6 +505,20 @@ footer {
 @media only screen and (min-width: 45em) {
     body {
         padding: 0 3em;
+    }
+
+    p {
+        font-size: 1.15em;
+    }
+
+    .container > h2:before {
+        content: "\2014\0020";
+        color: #ccc;
+    }
+
+    .container > h2:after {
+        content: "\0020\2014";
+        color: #ccc;
     }
 
     .logo {

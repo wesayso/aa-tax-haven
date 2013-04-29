@@ -103,14 +103,14 @@ ul, li {
 body {
     background-color: #001f29;
     color: #333;
+    font-size: 12px;
     padding: 0 1em;
     text-rendering: optimizeLegibility;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, .intro h2, p {
-
-
+h1, h2, h3, h4, h5, .intro h2 {
+    font-family: georgia, sans-serif;
     font-weight: normal;
     line-height: 1.25em;
     margin:0.5em 0 0.5em 0;
@@ -118,15 +118,14 @@ h1, h2, h3, h4, h5, .intro h2, p {
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 2.75em;
     margin-bottom: 0.25em;
-    color: #CF7600;
 }
 
 
 
 p {
-    font-size: 1.15em;
+    font-size: 1.25em;
     line-height: 1.75em;
     margin-top: 0;
     color: #444;
@@ -148,13 +147,12 @@ button {
     display:inline-block;
     text-transform: uppercase;
     font-weight: normal;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .wrapper {
     margin:0 auto;
     background-color: #fff;
-    max-width: 1500px;
 }
 
 .wrapper .container {
@@ -183,8 +181,8 @@ button {
 }
 .logo {
     background-color: #fff;
-    width: 2em;
-    height: 2em;
+    width: 8em;
+    height: 8em;
     position: absolute;
     top: 2%;
     left: 2%;
@@ -202,46 +200,33 @@ button {
 
 .mainstage {
     position: relative;
-    overflow:hidden;
-    background-color: #001f29;
-    min-height: 18em;
 }
 
 .mainstage .slideshow {
-    background-color: #001f29;;
-}
-
-.fadein { 
-    position:relative; 
+    float: left;
     width:100%;
-
-}
-
-.fadein img { 
-    position:absolute; 
-    left:0; 
+    position:relative;
     top:0;
+    overflow:hidden;
+    background-color: #001f29;
+    max-height: 36em;
+}
+
+.mainstage .slideshow img {
     width:100%;
-    height:60em;
     opacity: 0.5;
-    background: no-repeat center center; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
 }
 
 .mainstage h1 {
-    position:absolute;
+    position: absolute;
     text-align: center;
     width:100%;
     color:#fff;
     font-family: 'Dynalight', cursive;
     font-weight: normal;
-    font-size: 2em;
+    margin-top: 10%;
+    font-size: 4em;
     z-index: 1;
-    margin: 2.5em auto;
-
 }
 
 .mainstage h1 span {
@@ -260,13 +245,18 @@ button {
     border-bottom: 1px dotted #ddd;
 }
 
+.intro .col1{
+    width: 50%;
+}
+
 .intro p {
+    font-size: 1.3em;
     max-width: 36em;
     margin: 0 auto;
 }
 
 .three-col h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 .three-col img {
@@ -319,7 +309,7 @@ button {
 
 .hack h1 {
     font-family: "Cutive", sans-serif;
-    font-size: 5em;
+    font-size: 6em;
 }
 
 .hack p {
@@ -507,27 +497,9 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 35em) {
     body {
         padding: 0 3em;
-    }
-
-    .logo {
-        width: 4em;
-        height: 4em;
-    }
-
-    .mainstage {
-        min-height: 30em;
-    }
-
-    .mainstage h1 {
-        font-size: 4em;
-        margin: 1.75em auto;
-    }
-
-    .intro .col1{
-        width: 50%;
     }
 
     .three-col li {
@@ -538,7 +510,6 @@ footer {
            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
                 box-sizing: border-box;  
     }
-
     .three-col li:last-child {
         margin-right: 0;
     }

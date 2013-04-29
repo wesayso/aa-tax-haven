@@ -1,11 +1,12 @@
+
 $(document).ready(function(){
-	
+	// AA Hack	
 	$('.hack').slideUp();
 	var currentState = "closed";
-    
-    $(document).scroll(function() {
 
-        var top = $(document).scrollTop();
+	$(document).scroll(function() {
+
+		var top = $(document).scrollTop();
 		
 		console.log(top);		
 
@@ -13,11 +14,22 @@ $(document).ready(function(){
 			currentState = "open";	
 			$('.hack').slideDown();
 		}
-        
-        if ((top < 1600 && currentState == "open")) {
+
+		if ((top < 1400 && currentState == "open")) {
 			currentState = "closed";
 			$('.hack').slideUp();
 		}
-	        
-    });
+
+	});
+
+	// Crossfade images
+	$(function(){
+	    $('.fadein img:gt(0)').hide();
+	    setInterval(function(){
+	      $('.fadein :first-child').fadeOut()
+	         .next('img').fadeIn()
+	         .end().appendTo('.fadein');},
+	      3000);
+	});
 });
+

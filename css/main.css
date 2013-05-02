@@ -144,7 +144,6 @@ button {
     background-color: black;
     color: #fff;
     padding: 0.75em;
-    font-size: 1.25em;
     display:inline-block;
     text-transform: uppercase;
     font-weight: normal;
@@ -154,7 +153,8 @@ button {
 .wrapper {
     margin:0 auto;
     background-color: #fff;
-    max-width: 1500px;
+    max-width: 1200px;
+    position:relative;
 }
 
 .wrapper .container {
@@ -213,7 +213,7 @@ button {
     left:0; 
     top:0;
     width:100%;
-    height:60em;
+    height:40em;
     opacity: 0.5;
     background: no-repeat center center; 
       -webkit-background-size: cover;
@@ -222,17 +222,20 @@ button {
       background-size: cover;
 }
 
-.mainstage h1 {
-    position:absolute;
+.mainstage .overlay {
+    position: absolute;
     text-align: center;
     width:100%;
+    z-index: 1;
+    margin: 2.5em auto;
     color:#fff;
+}
+
+.mainstage h1 {
     font-family: 'Dynalight', cursive;
     font-weight: normal;
     font-size: 2em;
-    z-index: 1;
-    margin: 2.5em auto;
-
+    padding: 0;
 }
 
 .mainstage h1 span {
@@ -245,15 +248,27 @@ button {
     line-height: 1em;
 }
 
+.mainstage p {
+    color:#fff;
+    text-transform: uppercase;
+}
 
 .intro {
     margin: 0;
     border-bottom: 1px dotted #ddd;
 }
 
+.intro h2 {
+    font-size: 3em;
+}
+
 .intro p {
     max-width: 36em;
     margin: 0 auto;
+}
+
+.intro .container {
+    background: url("../img/pie-01.png") no-repeat top 1em right 1em;
 }
 
 .three-col li {
@@ -287,43 +302,83 @@ button {
     padding-bottom: 0;
 }
 
-.map {
-    margin-top: 3em;
-}
-
 .map iframe {
     width: 100%;
     margin-top: 1em;
-}
-
-.map h3 {
-    font-size: 1.75em;
+    border: none;   
 }
 
 .map .container {
     padding: 0;
 }
 
+
+/*Hack*/
+
 .hack {
     text-align: center;
     background-color: red;
     position: relative;
-    padding: 4em 0;
- 
+    padding: 2em 0;
+}
+
+.hack * {
+    color:#fff;
+}
+
+.hack h1,
+.hack h2,
+.hack h3,
+.hack .button {
+    font-family: "Cutive", sans-serif;
 }
 
 .hack h1 {
-    font-family: "Cutive", sans-serif;
-    font-size: 5em;
+    font-size: 2em;
+    margin-bottom: 0.25em;
+    color:#000;
+}
+
+.hack h2 {
+    font-size: 1em;
+}
+
+.hack  .three-col iframe {
+    width:100%;
 }
 
 .hack p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    max-width: 36em;
+    margin:0 auto 1.5em auto;
+    color: #fccfcc;
+
+}
+
+.hack p.first {
+    font-family: "Cutive", sans-serif;
+    font-size: 1.25em;
+    max-width: 30em;
+    margin-bottom: 0.5em;
     color: #fff;
 }
 
+.hack .case-study {
+    margin:2em auto;
+    background-color: #c00c00;
+    padding:1em;
+}
+
+.hack .case-study .video{
+    max-width: 36em;
+    margin:0 auto;
+}
+
+
 .aa-logo {
     width: 30%;
-    max-width: 18em;
+    max-width: 12em;
 }
 
 .tear {
@@ -351,13 +406,21 @@ button {
          -moz-background-size: cover;
            -o-background-size: cover;
               background-size: cover;
+
 }
 
+.testimonials h3 {
+        font-size: 1.5em;
+        background-color: #fff;
+        padding: 0.25em;
+        position: absolute;
+        bottom: 1em;
+    }
+
+
 .testimonials .one {
-    width: 65%;
     background-color: #ccc;
-    height: 36em;
-    background-image: url("../img/CRBJ7M.jpg");
+    background-image: url("../img/AMG3FH.jpg");
 }
 
 .testimonials .two {
@@ -368,18 +431,9 @@ button {
     background-image: url("../img/ACCE4P.jpg");
 }
 
-.testimonials .two,
-.testimonials .three {
-    width: 35%;
+.testimonials li {
+    width: 100%;
     height: 18em;
-}
-
-.testimonials h3 {
-    font-size: 1.5em;
-    background-color: #fff;
-    padding: 0.25em;
-    position: absolute;
-    bottom: 1em;
 }
 
 .testimonials .container {
@@ -393,6 +447,12 @@ button {
 
 footer {
     height: 10em;
+}
+
+.share {
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.85); 
+    padding: 0.5em;
 }
 
 /* ==========================================================================
@@ -511,6 +571,8 @@ footer {
         font-size: 1.15em;
     }
 
+
+
     .container > h2:before {
         content: "\2014\0020";
         color: #ccc;
@@ -532,7 +594,6 @@ footer {
 
     .mainstage h1 {
         font-size: 4em;
-        margin: 1.75em auto;
     }
 
     .intro .col1{
@@ -551,6 +612,53 @@ footer {
     .three-col li:last-child {
         margin-right: 0;
     }
+
+    .four-col li {
+        width: 23.5%;
+        float:left;
+        margin-right: 2%;
+    }
+
+    .four-col img {
+        width:60%;
+    }
+
+    .four-col li:nth-child(4n+4) {
+        margin-right: 0;
+    }
+
+    .hidden-post {
+        display:none;
+    }
+
+    .map h3 {
+        font-size: 1.75em;
+    }
+
+    .hack h1 {
+        font-size: 3.5em;
+    }
+
+    .testimonials .one {
+        width: 65%;
+        height:36em;
+    }
+
+    .testimonials .two,
+    .testimonials .three {
+        width: 35%;
+        height: 18em;
+    }
+
+    .share {
+        position:fixed;
+        right:1em;
+        top:1em;
+        z-index: 10;
+    }
+    
+
+
 }
 
 @media print,

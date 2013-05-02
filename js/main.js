@@ -10,12 +10,12 @@ $(document).ready(function(){
 		
 		console.log(top);		
 
-		if ((top > 1600 && currentState == "closed")) {
+		if ((top > 1300 && currentState == "closed")) {
 			currentState = "open";	
 			$('.hack').slideDown();
 		}
 
-		if ((top < 1400 && currentState == "open")) {
+		if ((top < 1100 && currentState == "open")) {
 			currentState = "closed";
 			$('.hack').slideUp();
 		}
@@ -31,6 +31,27 @@ $(document).ready(function(){
 	         .end().appendTo('.fadein');},
 	      3000);
 	});
+
+	
+
+	/* Expand / hide sections */
+
+    $("a.expand").click(function(e) {
+		e.preventDefault();
+        $(this).siblings('.hidden-post').slideToggle();
+        $(this).toggleClass('expanded');
+    });
+
+
+
+    $("a.expand").click(function(e) {
+        if($(this).hasClass('expanded')) {
+            $(this).text('hide');
+        } else {
+            $(this).text('View all');
+        }
+
+    });
 
 
 	/*

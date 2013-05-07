@@ -96,10 +96,7 @@ textarea {
 
 h1, h2, h3 {
     font-family: "Cutive", sans-serif;
-}
-
-h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 body {
@@ -109,12 +106,11 @@ body {
 .wrapper {
     margin:0 auto;
     background-color: #fff;
-    max-width: 720px;
-    margin-top: 2em;
+    max-width: 1500px;
 }
 
 .wrapper .container {
-    padding: 4%;
+    padding: 2% 2% 4% 2%;  
 }
 
 .container {
@@ -122,14 +118,6 @@ body {
     margin: 0 auto;
     position: relative;
     
-}
-
-.intro, .form {
-    border-bottom: 2px dashed red;
-}
-
-.intro .logo {
-    width:9em;
 }
 
 .ea-form-wrapper input[type='text'],
@@ -254,14 +242,6 @@ iframe #ea-field-First_Name h1 {
 
 @media only screen and (min-width: 45em) {
    
-    html {
-         background: url(../img/AC8BNT.jpg) no-repeat center center fixed; 
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-    }
-
 }
 
 @media print,

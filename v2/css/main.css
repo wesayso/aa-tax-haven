@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, .intro h2, p {
 h2 {
     font-size: 1.75em;
     margin-bottom: 0.25em;
-    color: #42B3CF;
+    color: #CF7600;
 }
 
 
@@ -241,11 +241,11 @@ button {
 
 .mainstage h1 span {
     display:block;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color:#FFE8B6;
-    font-weight: 400;
+    color:#ffdd80;
+    font-weight: bold;
     line-height: 1em;
 }
 
@@ -260,7 +260,7 @@ button {
 }
 
 .intro h2 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .intro p {
@@ -662,11 +662,11 @@ footer {
     }
 
     .mainstage {
-        min-height: 24em;
+        min-height: 30em;
     }
 
     .mainstage h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .intro .col1,

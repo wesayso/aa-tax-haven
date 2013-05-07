@@ -22,6 +22,10 @@ $(document).ready(function(){
 
 	});
 
+	// Auto scroll to hack
+	$("html, body").delay(10000).animate({scrollTop: $('#hack').offset().top }, 500);
+
+
 	// Crossfade images
 	$(function(){
 	    $('.fadein img:gt(0)').hide();

@@ -27,14 +27,14 @@ $(document).ready(function(){
 
 
 	// Crossfade images
-	$(function(){
-	    $('.fadein img:gt(0)').hide();
-	    setInterval(function(){
-	      $('.fadein :first-child').fadeOut()
-	         .next('img').fadeIn()
-	         .end().appendTo('.fadein');},
-	      5000);
-	});
+	// $(function(){
+	//     $('.fadein img:gt(0)').hide();
+	//     setInterval(function(){
+	//       $('.fadein :first-child').fadeOut()
+	//          .next('img').fadeIn()
+	//          .end().appendTo('.fadein');},
+	//       5000);
+	// });
 
 	
 
@@ -54,7 +54,6 @@ $(document).ready(function(){
         } else {
             $(this).text('View all');
         }
-
     });
 
 

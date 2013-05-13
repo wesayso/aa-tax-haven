@@ -106,27 +106,38 @@ body {
     color: #333;
     padding: 0;
     text-rendering: optimizeLegibility;
-    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
 }
 
-h1, h2, h3, h4, h5, .intro h2, p {
+/*
+font-family: 'Poller One', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Days One', sans-serif;
+font-family: 'Audiowide', cursive;
+font-family: 'Passion One', cursive;
+*/
 
-    font-weight: 200;
+h1, h2, h3, h4, h5, button, .button {
     line-height: 1.25em;
     margin:0.5em 0 0.5em 0;
-
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 h2 {
     font-size: 1.75em;
     margin-bottom: 0.25em;
-    color: #42B3CF;
+    color:#222;
 }
 
-
+.byline {
+    text-align: center;
+}
 
 p {
-    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     line-height: 1.75em;
     margin-top: 0;
     color: #444;
@@ -141,13 +152,12 @@ a {
 
 .button,
 button {
-    background-color: black;
+    background-color: #E93C81;
     color: #fff;
     padding: 0.75em;
     display:inline-block;
     text-transform: uppercase;
-    font-weight: normal;
-    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
 }
 
 .button:hover,
@@ -200,41 +210,27 @@ button:hover {
 .mainstage {
     position: relative;
     overflow:hidden;
-    background-color: #001f29;
-    min-height: 18em;
+    background-color: #000;
 }
 
 .mainstage .slideshow {
     background-color: #001f29;;
 }
 
-.fadein { 
-    position:relative; 
-    width:100%;
 
-}
-
-.fadein img { 
-    position:absolute; 
-    left:0; 
-    top:0;
+.mainstage .overlay {
+    text-align: center;
     width:100%;
-    height:40em;
-    opacity: 0.5;
-    background: no-repeat center center; 
+    z-index: 1;
+    margin: 0 auto;
+    padding: 3em 0;
+    color:#fff;
+    background: url("../img/B3H91A.jpg")no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-}
 
-.mainstage .overlay {
-    position: absolute;
-    text-align: center;
-    width:100%;
-    z-index: 1;
-    margin: 2.5em auto;
-    color:#fff;
 }
 
 .mainstage h1 {
@@ -242,16 +238,22 @@ button:hover {
     font-weight: normal;
     font-size: 2em;
     padding: 0;
+    text-transform: none;
 }
+
+
 
 .mainstage h1 span {
     display:block;
-    font-size: 3em;
-    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-family: 'Poller One', cursive;
     text-transform: uppercase;
-    color:#FFE8B6;
+    color:#44FFE9;
     font-weight: 400;
     line-height: 1em;
+    background: -webkit-linear-gradient(#eee, #44FFE9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .mainstage p {
@@ -285,9 +287,10 @@ button:hover {
 
 .intro .col2 {
     background:url("../img/BPR8KP.jpg") no-repeat top right;
-    padding: 6em 0;
-    background-size: 50%;
+    padding: 4em 0;
+    background-size: 35%;
 }
+
 
 .intro .col2 q {
     font-size: 1.5em;
@@ -321,6 +324,11 @@ button:hover {
     width:100%;
 }
 
+q {
+    font-family: georgia;
+    font-style: italic;
+}
+
 .features q {
     position:absolute;
     bottom: 0.5em;
@@ -330,20 +338,19 @@ button:hover {
     padding:0.2em 0.4em;
 }
 
-.company-list *{
+.company-list {
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .company-list li {
     position:relative;
-    height:12em;
 
 }
 
-.company-list p {
-    text-transform: uppercase;
-    font-size: 0.8em;
+.company-list li p {
+    text-align: left;
+    font-size: 0.85em;
 }
 
 .subs {
@@ -529,9 +536,8 @@ button:hover {
 }
 
 .testimonials q {
-        font-size: 1.5em;
         background-color: #fff;
-        padding: 0.25em;
+        padding: 0.5em;
         position: absolute;
         bottom: 1em;
         display:inline-block;
@@ -540,15 +546,15 @@ button:hover {
 
 .testimonials .one {
     background-color: #ccc;
-    background-image: url("../img/AMG3FH.jpg");
+    background-image: url("../img/BG92H4.jpg");
 }
 
 .testimonials .two {
-    background-image: url("../img/CTJK2W.jpg");
+    background-image: url("../img/BH904E.jpg");
 }
 
 .testimonials .three {
-    background-image: url("../img/ACCE4P.jpg");
+    background-image: url("../img/BHKWYR.jpg");
 }
 
 .testimonials li {
@@ -568,9 +574,16 @@ button:hover {
     width:100%;
 }
 
+.sign-up {
+    text-align: center;
+}
 
 footer {
-    text-align: right;
+    padding-bottom: 2em;
+}
+
+footer p {
+    font-size: 0.85em;
 }
 
 .share {
@@ -710,10 +723,6 @@ footer {
 
 @media only screen and (min-width: 45em) {
 
-    p {
-        font-size: 1.15em;
-    }
-
 
 
     .container > h2:before {
@@ -731,9 +740,6 @@ footer {
         height: 4em;
     }
 
-    .mainstage {
-        min-height: 24em;
-    }
 
     .mainstage h1 {
         font-size: 3em;

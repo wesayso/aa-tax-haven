@@ -365,42 +365,14 @@ q {
     border-radius: 0.2em; /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
 }
 
-.locations {
+.how-it-works {
     text-align: center;
     border-top: 1px dotted #ddd;
-}
-
-.locations .container {
-    padding-bottom: 0;
 }
 
 
 .map {
     position: relative;
-}
-
-.map .list table {
-    margin:0 auto;
-    text-align: left;
-}
-
-.map td:first-child {
-    padding-right: 2em;
-}
-
-.map td:last-child {
-    text-align: right;
-}
-
-.map h2 {
-    font-size: 1.15em;
-}
-
-.map p {
-    font-size: 0.85em;
-}
-
-.map-holder {
     min-height: 12em;
     background: url("../img/map.png")no-repeat center center;
     -webkit-background-size: cover;
@@ -409,11 +381,31 @@ q {
       background-size: cover;
 }
 
+.map-wrapper li {
+    text-align: left;
+}
+
+.map-wrapper li div {
+    float:left;
+}
+
+.map-wrapper .col1 {
+    font-size: 2em;
+    font-weight: bold;
+    display:block;
+    float:left;
+    width:15%;
+    line-height: 1em;
+}
+
+.map-wrapper .col2 {
+    width:85%;
+}
 
 /*Hack*/
 
 .hack {
-    text-align: center;
+    text-align: left;
     background-color: red;
     position: relative;
     padding: 2em 0;
@@ -426,7 +418,8 @@ q {
 .hack h1,
 .hack h2,
 .hack h3,
-.hack .button {
+.hack .button,
+.hack p {
     font-family: "Cutive", sans-serif;
 }
 
@@ -440,36 +433,33 @@ q {
     font-size: 1em;
 }
 
-.hack  .three-col iframe {
-    width:100%;
-}
-
 .hack p {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
     max-width: 36em;
-    margin:0 auto 1.5em auto;
-    color: #fccfcc;
-
 }
 
-.hack p.first {
-    font-family: "Cutive", sans-serif;
+.hack p.{
+    
     font-size: 1.25em;
     max-width: 30em;
     margin-bottom: 0.5em;
     color: #fff;
 }
 
-.hack .case-study {
-    margin:2em auto;
-    background-color: #c00c00;
-    padding:1em;
+.hack .col {
+    float:left;
 }
 
-.hack .case-study .video{
-    max-width: 24em;
-    margin:0 auto;
+.hack .col1 {
+    width:60%;
+}
+
+.hack .col2 {
+    width:30%;
+}
+
+.hack iframe {
+     background:white;
+     padding: 1em 2em;
 }
 
 .hack .button {
@@ -792,19 +782,8 @@ footer p {
         display:none;
     }
 
-    .map .list {
-        max-width: 18em;
-        position:absolute;
-        top: 1em;
-        right:1em;
-        background:#fff;
-        background: rgba( 255, 255, 255, 0.9);
-        padding:1em;
-        text-align: left;
-    }
-
-    .map-holder {
-        min-height: 24em;
+    .map {
+        min-height: 28em;
     }
 
     .hack h1 {

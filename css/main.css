@@ -181,7 +181,7 @@ button:hover {
 }
 
 .wrapper .container {
-    padding: 2%;
+    padding: 2% 0;
 }
 
 .container {
@@ -279,6 +279,7 @@ button:hover {
 .intro p {
     max-width: 36em;
     margin: 0 auto;
+    font-size: 1.15em;
 }
 
 .intro .container {
@@ -301,9 +302,12 @@ button:hover {
 
 .intro .col2 q {
     font-size: 1.5em;
-    max-width: 12em;
+    max-width: 13em;
     display:block;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em 0;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
     color:#666;
 }
 

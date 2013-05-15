@@ -1,5 +1,5 @@
-var HACKSHOWAFTER = 10; // Time to automatically show hack after, in seconds
-var HACKPERCENTAGESHOW = 30; // Hack will show when positionned this percentage from the top of the screen, whatever that may be
+var HACKSHOWAFTER = 20; // Time to automatically show hack after, in seconds
+var HACKPERCENTAGESHOW = 60; // Hack will show when positionned this percentage from the top of the screen, whatever that may be
 
 function getViewportOffset() {
 	var d = document, w = window, documentElement = d.documentElement
@@ -22,7 +22,7 @@ $(function(){
 		$('body,html').animate({scrollTop: triggerOffset.top}, 800, 'swing', function(){
 			$('.hack').slideDown();
 		});		
-	}, HACKSHOWAFTER * 2000);
+	}, HACKSHOWAFTER * 1000);
 
 	// Show hack when top-left point of target reaches certain percentage of screen height
 	$('.hacktrigger').bind('inview', function(event, isInView, visiblePartX, visiblePartY, percentageOfHeight){

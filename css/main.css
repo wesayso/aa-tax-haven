@@ -127,17 +127,24 @@ h1, h2, h3, h4, h5, button, .button {
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 2em;
     margin-bottom: 0.25em;
     color:#222;
 }
 
+h1, h2 {
+    -webkit-font-smoothing
+}
+
 .byline {
     text-align: center;
+    max-width: 36em;
+    margin:0 auto;
+    font-size: 1em;
+    margin-bottom: 1em;
 }
 
 p {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     line-height: 1.75em;
     margin-top: 0;
     color: #444;
@@ -340,7 +347,6 @@ q {
 
 .company-list {
     text-align: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .company-list li {
@@ -351,6 +357,13 @@ q {
 .company-list li p {
     text-align: left;
     font-size: 0.85em;
+}
+
+
+.company-list q {
+    display:block;
+    text-align: left;
+    margin: 1.5em 0 0.5em 0;
 }
 
 .subs {
@@ -367,7 +380,7 @@ q {
 
 .how-it-works {
     text-align: center;
-    border-top: 1px dotted #ddd;
+    background:#f6F6F3;
 }
 
 
@@ -411,9 +424,7 @@ q {
     padding: 2em 0;
 }
 
-.hack * {
-    color:#fff;
-}
+
 
 .hack h1,
 .hack h2,
@@ -427,34 +438,57 @@ q {
     font-size: 2em;
     margin-bottom: 0.25em;
     color:#000;
+    font-weight: 600;
 }
 
 .hack h2 {
     font-size: 1em;
 }
 
-.hack p {
+.hack p.first{
     max-width: 36em;
-}
-
-.hack p.{
-    
-    font-size: 1.25em;
+    font-size: 1.5em;
     max-width: 30em;
-    margin-bottom: 0.5em;
+    margin: 0 auto 0.5em auto;
     color: #fff;
 }
 
 .hack .col {
     float:left;
+    text-align: left;
 }
 
 .hack .col1 {
-    width:60%;
+    width:56%;
+    margin-right: 4%;
+}
+
+.hack .case-study {
+    margin-top: 2em;
+    padding:2em 0;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+}
+
+.hack .col1 .photo {
+    border:0.25em solid #fff;
+    margin-right:2%;
+    width:26%;
+    float:left;
+}
+
+.hack .col1 q {
+    float:left;
+    width:70%;
+}
+
+.hack .col1 .quotee {
+    margin-top: 1em;
+    float:left;
 }
 
 .hack .col2 {
-    width:30%;
+    width:40%;
 }
 
 .hack iframe {
@@ -484,6 +518,7 @@ q {
 .aa-logo {
     width: 30%;
     max-width: 12em;
+    display:block;
 }
 
 .tear {
@@ -540,11 +575,11 @@ q {
 }
 
 .testimonials .two {
-    background-image: url("../img/BH904E.jpg");
+    background-image: url("../img/B0DRCH.jpg");
 }
 
 .testimonials .three {
-    background-image: url("../img/BHKWYR.jpg");
+    background-image: url("../img/BE702T.jpg");
 }
 
 .testimonials li {
@@ -566,6 +601,11 @@ q {
 
 .sign-up {
     text-align: center;
+}
+
+.sign-up .container {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 footer {

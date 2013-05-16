@@ -1,5 +1,5 @@
 var HACKSHOWAFTER = 20; // Time to automatically show hack after, in seconds
-var HACKPERCENTAGESHOW = 60; // Hack will show when positionned this percentage from the top of the screen, whatever that may be
+var HACKPERCENTAGESHOW = 40; // Hack will show when positionned this percentage from the top of the screen, whatever that may be
 
 function getViewportOffset() {
 	var d = document, w = window, documentElement = d.documentElement

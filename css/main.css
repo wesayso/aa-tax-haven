@@ -241,26 +241,27 @@ button:hover {
 }
 
 .mainstage h1 {
-    font-family: 'Dynalight', cursive;
-    font-weight: normal;
-    font-size: 2em;
-    padding: 0;
-    text-transform: none;
+    width:100%;
 }
-
-
 
 .mainstage h1 span {
     display:block;
-    font-size: 2em;
-    font-family: 'Poller One', cursive;
-    text-transform: uppercase;
-    color:#44FFE9;
-    font-weight: 400;
-    line-height: 1em;
-    background: -webkit-linear-gradient(#eee, #44FFE9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin:0 auto;
+}
+
+.mainstage h1 img {
+    width:100%;
+
+}
+
+.mainstage .welcome {
+    max-width: 5em;
+    margin-bottom: 2%;
+}
+
+.mainstage .heaven {
+    max-width: 16em;
+    padding:0 4%;
 }
 
 .mainstage p {

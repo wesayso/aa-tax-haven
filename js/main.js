@@ -18,22 +18,22 @@ $(function(){
 	var triggerOffset = $('.hacktrigger').offset();
 
 	// After X seconds, automatically scroll to and show hack
-	//var hacktimeout = setTimeout(function(){
-		//$('body,html').animate({scrollTop: triggerOffset.top}, 800, 'swing', function(){
-			//$('.hack').slideDown();
-		//});		
-	//}, HACKSHOWAFTER * 1000);
+	// var hacktimeout = setTimeout(function(){
+	// 	$('body,html').animate({scrollTop: triggerOffset.top}, 800, 'swing', function(){
+	// 		$('.hack').slideDown();
+	// 	});		
+	// }, HACKSHOWAFTER * 1000);
 
 	// Show hack when top-left point of target reaches certain percentage of screen height
 	$('.hacktrigger').bind('inview', function(event, isInView, visiblePartX, visiblePartY, percentageOfHeight){
 
 		viewportOffset = getViewportOffset();
 
-		if(isInView == true && percentageOfHeight <= HACKPERCENTAGESHOW){
+		if(isInView == true){
 			$('.hack').slideDown();
-			clearInterval(hacktimeout);
+			//clearInterval(hacktimeout);
 		} else {
-			if(!isInView && viewportOffset.top < triggerOffset.top){
+			if(!isInView){
 				$('.hack').slideUp()
 			}
 		}

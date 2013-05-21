@@ -579,7 +579,11 @@ q {
         position: absolute;
         bottom: 1em;
         display:inline-block;
-    }
+}
+
+.testimonials .one q {
+    max-width: 600px;
+}
 
 
 .testimonials .one {
@@ -592,7 +596,7 @@ q {
 }
 
 .testimonials .three {
-    background-image: url("../img/BG01MX.jpg");
+    background-image: url("../img/rich-men-laughing.jpg");
 }
 
 .testimonials li {

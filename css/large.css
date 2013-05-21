@@ -115,6 +115,10 @@
          padding: 1em 2em;
     }
 
+    .tax-factor img {
+        margin-left: 0; 
+    }
+
     .testimonials .one {
         width: 65%;
         height:36em;
@@ -164,6 +168,8 @@
 
 
 }
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

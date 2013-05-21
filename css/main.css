@@ -644,11 +644,13 @@ footer p {
 
 .slats li {
     border-bottom: 1px solid #ccc;
+    overflow: hidden;
 }
 
 .slats img {
     float:right;
     width:30%;
+
 }
 
 /* ==========================================================================

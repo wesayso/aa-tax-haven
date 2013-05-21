@@ -12,10 +12,14 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/normalize.css" media="all">
+        <link rel="stylesheet" href="css/main.css" media="all">
+        <link rel="stylesheet" href="css/large.css" media="all and (min-width: 45em)">
+        <!--[if lte IE 8]>
+         <link rel="stylesheet" href="css/large.css" media="all">
+        <![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Poller+One|Anton|Dynalight|Cutive|Open+Sans' rel='stylesheet' type='text/css'>
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
@@ -50,9 +54,16 @@
 
                 <section class="mainstage clearfix">
                     <div class="logo" credit="YouGou, from The Noun Project"></div>
-                        <div class="overlay">
-                            <h1><span class="welcome"><img src="img/welcome.png"></span><span class="heaven"><img src="img/tax-heaven.png" alt="TAX HEAVEN"></span></h1>
-                        </div>
+                    <div class="overlay">
+                        <h1>
+                            <span class="welcome">
+                                <img src="img/welcome.png">
+                            </span>
+                            <span class="heaven">
+                                <img src="img/tax-heaven.png" alt="TAX HEAVEN">
+                            </span>
+                        </h1>
+                    </div>
                 </section>
 
                 <section class="intro">
@@ -90,7 +101,7 @@
                                 <p>Got massive profits? Hate transparency? Your company could be eligible to join some of the biggest UK companies using tax havens.</p>
                             </li>                            
 
-                            <li>
+                            <li class="last">
                                 <div class="crop">
                                     <img src="img/C7JN8X.jpg">
                                 </div>
@@ -127,7 +138,7 @@
                                     <div class="col1">3.</div>
                                     <div class="col2">That helps to swell the company profits to over £2&nbsp;billion a year!</div>
                                 </li>
-                                <li>
+                                <li class="last">
                                     <div class="col1">4.</div>
                                     <div class="col2">Very minor side effects include around 250,000 African children missing out on school places and Ghanaian market traders paying more tax than the company.</div>
                                 </li>
@@ -185,7 +196,7 @@
                                 </div>
                             </li>
 
-                            <li>
+                            <li class="last">
                                 <img src="img/aerial-beach.jpg" alt="Mauritius">
                                 <div>
                                     <p>What’s the biggest source of investment into India?   The UK - no. The USA - nope. China – naar. It’s the <strong>tiny</strong> sunny haven of Mauritius!</p>
@@ -232,7 +243,7 @@
                                     <p>We’ll make sure no one knows where your money is — including you! That’s our guarantee.</p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="last">
                                 <img src="img/AY3310.jpg">
                                 <div>
                                     <h2>Exotic locations</h2>

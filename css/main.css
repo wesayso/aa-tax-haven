@@ -197,19 +197,13 @@ button:hover {
 
 .logo {
     background-color: #fff;
-    width: 2em;
-    height: 2em;
+    width: 60px;
+    height: 60px;
     position: absolute;
     top: 2%;
     left: 2%;
     z-index: 5;
-    background: url("../img/logo.png");
-    border: 1em solid #fff;
-    -webkit-background-size: cover;
-         -moz-background-size: cover;
-           -o-background-size: cover;
-              background-size: cover;
-
+    background: url("../img/logo-small.png") top left no-repeat;
     border-radius: 50%;
     
 }
@@ -232,12 +226,11 @@ button:hover {
     margin: 0 auto;
     padding: 4.5em 0 5.5em 0;
     color:#fff;
-    background: url("../img/B3H91A.jpg")no-repeat center center;
+    background: url("../img/B3H91A.jpg") center center  no-repeat;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-
 }
 
 .mainstage h1 {
@@ -389,11 +382,15 @@ q {
 .map {
     position: relative;
     min-height: 12em;
-    background: url("../img/map.png")no-repeat center center;
+    background: url("../img/map.png") center center no-repeat;
     -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+}
+
+.no-backgroundsize .map {
+
 }
 
 .map-wrapper li {
@@ -538,16 +535,12 @@ q {
     font-weight: 300;
 }
 
-.testimonials ul > * {
+.testimonials ul li {
     float: left;
     display: block;
     position: relative;
-    background: no-repeat center center; 
-      -webkit-background-size: cover;
-         -moz-background-size: cover;
-           -o-background-size: cover;
-              background-size: cover;
-
+    background-repeat :no-repeat; 
+    background-position: center center; 
 }
 
 .testimonials q {

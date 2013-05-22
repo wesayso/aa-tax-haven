@@ -47,7 +47,7 @@
     }
 
     .intro .col2 q {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     .three-col li {
@@ -96,11 +96,14 @@
         margin-right: 4%;
     }
 
-    .hack .col1 q {
+    .hack .col1 .quote {
         float:left;
         width:70%;
     }
 
+    .hack .col1 q {
+        font-size: 1.25em;
+    }
 
     .hack .col1 .photo {
         float:left;
@@ -151,6 +154,11 @@
         float:left;
         position:relative;
         top:0;
+    }
+
+    .share h2 {
+        font-size: 1em;
+        margin-bottom: 0.5em;
     }
 
     .slats li {

@@ -204,7 +204,6 @@ button:hover {
     left: 2%;
     z-index: 5;
     background: url("../img/logo-small.png") top left no-repeat;
-    border-radius: 50%;
     
 }
 
@@ -623,19 +622,21 @@ footer p {
     height:21px;
     float:right;
     position:relative;
-    top:0.5em;
+
 }
 
 .share h2 {
-    font-size: 1em;
+    font-size: 0.75em;
     color:#fff;
     display:inline-block;
-    margin-bottom: 0.5em;
     margin-top:0;
+    float:left;
+    line-height: 21px;
+
 }
 
 .fb-like {
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 .slats {

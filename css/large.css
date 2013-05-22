@@ -4,8 +4,6 @@
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 45em) {
-
 
     .container > h2:before {
         content: "\2014\0020";
@@ -18,8 +16,9 @@
     }
 
     .logo {
-        width: 4em;
-        height: 4em;
+        width: 120px;
+        height: 120px;
+        background-image: url("../img/logo.png");
     }
 
 
@@ -55,22 +54,19 @@
         width: 32%;
         float: left;
         margin-right: 2%;
-        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-           -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-                box-sizing: border-box;  
     }
 
-    .three-col li:last-child {
+    .three-col li.last {
         margin-right: 0;
     }
 
     .four-col li {
-        width: 23.5%;
+        width: 23%;
         float:left;
         margin-right: 2%;
     }
 
-    .four-col li:nth-child(4n+4) {
+    .four-col li.last {
         margin-right: 0;
     }
 
@@ -113,6 +109,10 @@
     .hack iframe {
          background:white;
          padding: 1em 2em;
+    }
+
+    .tax-factor img {
+        margin-left: 0; 
     }
 
     .testimonials .one {
@@ -162,12 +162,3 @@
         width:100%;
     }
 
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}

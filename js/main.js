@@ -1,43 +1,38 @@
 var HACKSHOWAFTER = 20; // Time to automatically show hack after, in seconds
-var HACKPERCENTAGESHOW = 40; // Hack will show when positionned this percentage from the top of the screen, whatever that may be
-
-function getViewportOffset() {
-	var d = document, w = window, documentElement = d.documentElement
-
-	return {
-		top:  w.pageYOffset || documentElement.scrollTop   || d.body.scrollTop,
-		left: w.pageXOffset || documentElement.scrollLeft  || d.body.scrollLeft
-	};
-}
+var triggerOffsetTimeout = $('.hacktrigger').offset();
 
 $(function(){
 	// Hide hack to begin with
 	$('.hack').slideUp();
+	var currentState = "closed";
 
-	// get offset of locations, our trigger element for the hack
-	var triggerOffset = $('.hacktrigger').offset();
 
-	// After X seconds, automatically scroll to and show hack
-	// var hacktimeout = setTimeout(function(){
-	// 	$('body,html').animate({scrollTop: triggerOffset.top}, 800, 'swing', function(){
-	// 		$('.hack').slideDown();
-	// 	});		
-	// }, HACKSHOWAFTER * 1000);
+	$(document).scroll(function() {
+		var top = $(document).scrollTop();
+		// get offset of locations, our trigger element for the hack
+		var triggerOffset = $('.hacktrigger').offset();
 
-	// Show hack when top-left point of target reaches certain percentage of screen height
-	$('.hacktrigger').bind('inview', function(event, isInView, visiblePartX, visiblePartY, percentageOfHeight){
-
-		viewportOffset = getViewportOffset();
-
-		if(isInView == true){
+		if (top > triggerOffset.top && currentState == "closed") {
 			$('.hack').slideDown();
-			//clearInterval(hacktimeout);
-		} else {
-			if(!isInView){
-				$('.hack').slideUp()
-			}
+			currentState = "open";
+		}
+        
+        if ((top < triggerOffset.top && currentState == "open")) {
+			//currentState = "closed";
+			$('.hack').slideUp();
+			currentState = "closed";
 		}
 	});
+
+
+	
+
+	// After X seconds, automatically scroll to and show hack
+	var hacktimeout = setTimeout(function(){
+		$('body,html').animate({scrollTop: triggerOffsetTimeout.top}, 800, 'swing', function(){
+			$('.hack').slideDown();
+		});		
+	}, HACKSHOWAFTER * 1000);
 
 	// Crossfade images
 	$(function(){

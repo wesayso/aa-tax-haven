@@ -11,7 +11,6 @@ $(function(){
 		var top = $(document).scrollTop();
 		// get offset of locations, our trigger element for the hack
 		var triggerOffset = $('.hacktrigger').offset();
-		console.log();
 
 		if (top > triggerOffset.top && currentState == "closed") { //the -266 means that the slidedown is triggered at the point the top of the How it works section hits the top of the screen
 			$('.hack').slideDown();

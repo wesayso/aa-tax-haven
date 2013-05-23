@@ -8,8 +8,7 @@ $(function(){
 
 
 	$(window).scroll(function() {
-		console.log('scrolled');
-		var top = $(document).scrollTop();
+		var top = $(window).scrollTop();
 		// get offset of locations, our trigger element for the hack
 		var triggerOffset = $('.hacktrigger').offset();
 

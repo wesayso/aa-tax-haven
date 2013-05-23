@@ -7,7 +7,7 @@ $(function(){
 	var currentState = "closed";
 
 
-	$(document).scroll(function() {
+	$(window).scroll(function() {
 		var top = $(document).scrollTop();
 		// get offset of locations, our trigger element for the hack
 		var triggerOffset = $('.hacktrigger').offset();

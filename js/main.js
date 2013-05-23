@@ -11,13 +11,14 @@ $(function(){
 		var top = $(document).scrollTop();
 		// get offset of locations, our trigger element for the hack
 		var triggerOffset = $('.hacktrigger').offset();
+		console.log();
 
-		if (top > triggerOffset.top - 266 && currentState == "closed") { //the -266 means that the slidedown is triggered at the point the top of the How it works section hits the top of the screen
+		if (top > triggerOffset.top && currentState == "closed") { //the -266 means that the slidedown is triggered at the point the top of the How it works section hits the top of the screen
 			$('.hack').slideDown();
 			currentState = "open";
 		}
         
-        if ((top < triggerOffset.top - 266 && currentState == "open")) {
+        if ((top < triggerOffset.top && currentState == "open")) {
 			//currentState = "closed";
 			$('.hack').slideUp();
 			currentState = "closed";
@@ -28,11 +29,11 @@ $(function(){
 	
 
 	// After X seconds, automatically scroll to and show hack
-	var hacktimeout = setTimeout(function(){
-		$('body,html').animate({scrollTop: triggerOffsetTimeout.top}, 800, 'swing', function(){
-			$('.hack').slideDown();
-		});		
-	}, HACKSHOWAFTER * 1000);
+	// var hacktimeout = setTimeout(function(){
+	// 	$('body,html').animate({scrollTop: triggerOffsetTimeout.top}, 800, 'swing', function(){
+	// 		$('.hack').slideDown();
+	// 	});		
+	// }, HACKSHOWAFTER * 1000);
 
 	// Crossfade images
 	$(function(){

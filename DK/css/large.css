@@ -1,0 +1,172 @@
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+    .container > h2:before {
+        content: "\2014\0020";
+        color: #ccc;
+    }
+
+    .container > h2:after {
+        content: "\0020\2014";
+        color: #ccc;
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+        background-image: url("../img/logo.png");
+    }
+
+
+    .mainstage h1 {
+        font-size: 3em;
+    }
+
+    .intro h2 {
+        font-size: 3em;
+    }
+
+    .intro .col1,
+    .intro .col2 {
+        float:left;
+        padding-right: 6em;
+        
+    }
+
+    .intro .col1 {
+        width: 60%;
+    }
+
+    .intro .col2 {
+        width: 40%;
+
+    }
+
+    .intro .col2 q {
+        font-size: 1.6em;
+    }
+
+    .three-col li {
+        width: 32%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .three-col li.last {
+        margin-right: 0;
+    }
+
+    .four-col li {
+        width: 23%;
+        float:left;
+        margin-right: 2%;
+    }
+
+    .four-col li.last {
+        margin-right: 0;
+    }
+
+    .hidden-post {
+        display:none;
+    }
+
+    .map {
+        min-height: 35em;
+    }
+
+    .hack h1 {
+        font-size: 3em;
+    }
+
+    .hack p.first{
+        font-size: 1.3em;
+    }
+
+    .hack .col {
+        float:left;
+        text-align: left;
+    }
+
+    .hack .col1 {
+        width:56%;
+        margin-right: 4%;
+    }
+
+    .hack .col1 .quote {
+        float:left;
+        width:70%;
+    }
+
+    .hack .col1 q {
+        font-size: 1.25em;
+    }
+
+    .hack .col1 .photo {
+        float:left;
+    }
+
+    .hack iframe {
+         background:white;
+         padding: 1em 2em;
+    }
+
+    .tax-factor img {
+        margin-left: 0; 
+    }
+
+    .testimonials .one {
+        width: 65%;
+        height:36em;
+    }
+
+    .testimonials .two,
+    .testimonials .three {
+        width: 35%;
+        height: 18em;
+    }
+
+    .share-container {
+        position:fixed;        
+        top:1em;
+        right:1em;
+        z-index: 10;
+        width:100%;
+    }
+
+    .share-container .container {
+        max-width: 1200px;
+        padding:0;
+    }
+
+    .share {
+        position:absolute;
+        right:0;
+        top:0;
+        padding: 1.5em;
+        width:230px;
+    }
+
+    .share ul {
+        float:left;
+        position:relative;
+        top:0;
+    }
+
+    .share h2 {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .slats li {
+        border:none;
+    }
+
+    .slats img {
+        float: none;
+        width:100%;
+    }
+
